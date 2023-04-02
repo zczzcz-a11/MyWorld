@@ -1,18 +1,37 @@
-# Vue 3 + TypeScript + Vite
+# 基于Vue3+TypeScript+Vite构建的MyWorld pc端音乐流媒体网站
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## 主要技术栈
++ Vue3: 用于快速构建web用户界面的框架.
++ naive-ui: 基于Vue3的组件库,可自定义主题,支持夜间模式
++ Vite: 下一代的前端构建工具,支持HRM,TypeScript,JSX,开箱即用.
++ axios: 是用于浏览器和node.js的基于Promise的http库,用于请求Api
++ dayjs: 轻量级,用于处理时间相关格式化问题的库
++ color.js: 用于不可变颜色的转换和操作的JavaScript库.
++ eslint: 基于AST模式的JavaScript代码风格检查工具.
++ lodash: 实用JavaScript工具函数库,提供了类似防抖节流,深拷贝开箱即用的函数
++ nanoid: 小型的安全的,用于生成唯一字符串id的JavaScript库.
++ normalize.css: 一个用于现代化的重置css的库,用于磨平各个浏览器之间不同样式的兼容问题.
++ pinia: 基于Proxy使用TypeScript编写的灵活的且类型安全的下一代Vue状态管理库.
++ qs: 安全的用于字符串序列化的库,通常用于处理请求参数.
++ rgbaster: 基于Promise的JavaScript库,用于从图像中提取主色.
++ vue-router4: 基于Vue3路由管理库
++ vue-virtual-scroller: 基于Vue的虚拟滚动JavaScript库
++ xgplayer: 西瓜播放器(HTML5),带解析器,能节省流量 提供开箱即用的HTML5视频播放器库
++ tailwindcss: 基于原子化css的实用程序优先的css框架,用于快速构建自定义用户界面.
++ PostCSS PostCSS是一个开源css处理器，它可以基于CSS规范自动处理、检查和编译CSS文件
 
-## Recommended IDE Setup
+## 主要功能
++ 自定义封装歌曲进度条,可点击拖拽切换到指定播放时间, 添加buffer加载进度显示.
++ 歌词自动同步滚动高亮,滚动选择歌词切换播放时间.
++ 歌曲播放或暂停时cd旋转或停止旋转.
++ 兼容夜间模式,骨架屏加载显示.
++ 歌单内部搜索歌曲,收藏歌单,编辑歌单,新建歌单.
++ 自定义图片懒加载,缓冲loading显示.
++ 扫码登录,编辑用户信息,签到.退出登录.
++ 记忆当前滚动位置.刷新页面时更新滚动位置.
++ 搜索歌曲或歌单,提供搜索建议.搜索历史记录缓存.
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Type Support For `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+## 项目运行
+```
+npm install
+npm run dev
